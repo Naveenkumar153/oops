@@ -1,3 +1,5 @@
+// See ENCAPSULATION.md for documentation
+
 type PersonOccupation = "Engineer" | "Doctor" | "Artist" | "Teacher" | "Other";
 
 export class Person {

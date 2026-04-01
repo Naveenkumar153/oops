@@ -1,3 +1,5 @@
+// See ABSTRACTION.md for documentation
+
 interface PaymentMethod {
     pay(): void;
 }

@@ -1,0 +1,19 @@
+{
+  "name": "oops",
+  "version": "1.0.0",
+  "description": "Typescript oops",
+  "license": "ISC",
+  "author": "Naveen",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"tsc --watch\" \"browser-sync start --server --files 'dist/**/*.js, index.html' --port 3000\"",
+    "build": "tsc",
+    "start": "tsc && node dist/index.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.1",
+    "typescript": "^6.0.2"
+  }
+}

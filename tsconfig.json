@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM"],
+
+    "outDir": "./dist",
+    "rootDir": "./src",
+
+    "moduleResolution": "bundler",   // ✅ Fixed (was "bundler")
+    "resolveJsonModule": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "sourceMap": true
+    // ✅ Removed "noEmit": true  → now JS files will be generated
+    // ✅ Removed "jsx"           → no React here
+    // ✅ Removed "verbatimModuleSyntax" → was causing issues
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

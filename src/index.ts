@@ -1,5 +1,6 @@
 import { Person } from "./encapsulation.js";
 import { CreditCardPayment, UpiPayment } from "./abstraction.js";
+import { Dog, RobotDog } from './inheritance.js';
 
 const person = new Person("Naveen", 30, true, 'Engineer');
 console.log(person.getName); // Output: Naveen
@@ -20,3 +21,11 @@ upiPayment.pay();
 // Processing UPI payment of $50 
 // using UPI ID musk@upi.
 // Payment of $50 has been processed.
+
+const dog = new Dog("Buddy");
+dog.bark(); // Output: Buddy is barking loudly
+dog.eat();  // Output: Buddy is eating dog food
+
+const robotDog = new RobotDog("RoboBuddy");
+robotDog.bark(); // Output: RoboBuddy is barking electronically
+robotDog.eat();  // Output: RoboBuddy is charging
